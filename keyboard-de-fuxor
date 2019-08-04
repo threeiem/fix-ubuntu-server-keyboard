@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "${UID}" == "0" ]; then
+  dpkg-reconfigure keyboard-configuration
+  setupcon
+else
+  echo "Silly mortal."
+fi
